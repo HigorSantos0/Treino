@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-/*Questão 01 [3,0 pontos]:
-Implementar três programas (um para cada estrutura
-de repetição estudada) que leia um valor inteiro N e
-exiba os valores de 1 a N, atendendo às seguintes
+/*QuestÃ£o 01 [3,0 pontos]:
+Implementar trÃªs programas (um para cada estrutura
+de repetiÃ§Ã£o estudada) que leia um valor inteiro N e
+exiba os valores de 1 a N, atendendo Ã s seguintes
 regras:
 1. Na primeira metade dos valores, apresentar apenas
-aqueles que não sejam divisores de N;
-2. Na segunda metade, mostrar somente os números
+aqueles que nÃ£o sejam divisores de N;
+2. Na segunda metade, mostrar somente os nÃºmeros
 pares.*/
 void main()
 {
@@ -27,7 +27,7 @@ void main()
 		}
 		if (i % 2 == 0)
 		{
-			if (i >= num/2)
+			if (i > num/2)
 			{
 				printf ("%d ", i);
 			}
