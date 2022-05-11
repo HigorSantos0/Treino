@@ -1,21 +1,21 @@
-/*Questão 04 [4,0 pontos]:
-Desenvolver uma aplicação que permaneça lendo
-dados (código, número de créditos, notas na AV1, AV2 e
-AVF – esta última, quando for o caso) sobre as diversas
+/*QuestÃ£o 04 [4,0 pontos]:
+Desenvolver uma aplicaÃ§Ã£o que permaneÃ§a lendo
+dados (cÃ³digo, nÃºmero de crÃ©ditos, notas na AV1, AV2 e
+AVF â€“ esta Ãºltima, quando for o caso) sobre as diversas
 disciplinas cursadas por determinado aluno. Ao final,
 exibir:
-? Número de disciplinas cursadas;
+? NÃºmero de disciplinas cursadas;
 ? Total de disciplinas nas quais foi aprovado sem
-prova final (média igual ou superior a 7), reprovado
-sem direito de fazer a prova final (média inferior a
+prova final (mÃ©dia igual ou superior a 7), reprovado
+sem direito de fazer a prova final (mÃ©dia inferior a
 4) e provas finais prestadas;
-? Código da disciplina na qual obteve maior média
+? CÃ³digo da disciplina na qual obteve maior mÃ©dia
 final;
-? Código da disciplina na qual obteve menor média
+? CÃ³digo da disciplina na qual obteve menor mÃ©dia
 final;
 ? Coeficiente de rendimento do aluno (que consiste
-em uma média ponderada de todas as médias de
-disciplinas, considerando o número de créditos
+em uma mÃ©dia ponderada de todas as mÃ©dias de
+disciplinas, considerando o nÃºmero de crÃ©ditos
 como peso).*/
 
 #include <stdio.h>
@@ -70,7 +70,7 @@ void main ()
 							scanf ("%f", &avf);
 							disciplinamen = codigo;
 							
-							valormult = (av1 * av2) + avf;
+							valormult = (mediaav1eav2 * ncreditos) + avf;
 							mult += valormult;
 							valorsoma += ncreditos;
 							
@@ -93,7 +93,7 @@ void main ()
 		
 		
 		
-		valormult = av1 * av2;
+		valormult = mediaav1eav2 * ncreditos;
 		mult += valormult;
 		valorsoma += ncreditos;
 		
